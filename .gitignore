@@ -1,0 +1,71 @@
+# Self-contained rules: frontend can be a separate Git repository.
+# Keep package.json, lockfiles, source, public assets and safe env templates.
+.env
+.env.*
+*.env
+!.env.example
+!.env.cloud.example
+.envrc
+.direnv/
+.npmrc
+.local/
+.secrets/
+secrets/
+credentials/
+.aws/
+.azure/
+service-account*.json
+service_account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# Node dependencies and package-manager caches.
+node_modules/
+.npm/
+.pnpm-store/
+.cache/
+
+# Next.js and other generated build output.
+.next/
+/out/
+/build/
+/dist/
+.turbo/
+.swc/
+*.tsbuildinfo
+next-env.d.ts
+
+# Provider-local project state and credentials.
+.vercel/
+.netlify/
+
+# Logs and browser/test artifacts, including saved login state.
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+.nyc_output/
+/test-results/
+/playwright-report/
+/blob-report/
+/.auth/
+/playwright/.auth/
+
+# OS/editor files. Public images and application source stay trackable.
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*.local.json

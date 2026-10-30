@@ -1,0 +1,19 @@
+{
+  "name": "attendance-frontend",
+  "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/postcss": "^4.1.0"
+  }
+}
